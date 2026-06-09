@@ -42,19 +42,21 @@ export default function Services() {
               }`}
             >
               
-              {/* Graphic Element */}
-              <div className="w-full lg:w-1/3 aspect-[4/3] rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800/80 flex flex-col justify-between p-6 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-accent/5 pointer-events-none" />
-                <div className="flex justify-between items-center text-primary dark:text-primary-light">
-                  <FaCogs size={20} className="animate-spin" style={{ animationDuration: '10s' }} />
-                  <span className="text-[10px] font-extrabold tracking-widest uppercase">Service Log: {service.id}</span>
-                </div>
-                <div className="text-center font-bold text-slate-800 dark:text-slate-200 py-4">
-                  {service.title}
-                </div>
-                <div className="text-right text-[10px] text-slate-400 font-semibold uppercase">
-                  Supreme Systems Solution
-                </div>
+              {/* Service Illustration */}
+              <div className="w-full lg:w-1/3 aspect-[4/3] rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800/80 overflow-hidden relative flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-accent/5 pointer-events-none z-10" />
+                {service.imageUrl ? (
+                  <img
+                    src={service.imageUrl}
+                    alt={service.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center gap-3 text-primary dark:text-primary-light opacity-40">
+                    <FaCogs size={40} className="animate-spin" style={{ animationDuration: '10s' }} />
+                    <span className="text-xs font-bold uppercase tracking-widest">{service.title}</span>
+                  </div>
+                )}
               </div>
 
               {/* Text Description */}
