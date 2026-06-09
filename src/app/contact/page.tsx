@@ -141,7 +141,7 @@ export default function Contact() {
                 <FaPhoneAlt size={16} />
               </div>
               <h3 className="font-bold text-slate-900 dark:text-white font-display text-sm">Call Engineering Desk</h3>
-              <div className="flex flex-col text-slate-655 dark:text-slate-400 text-xs sm:text-sm">
+              <div className="flex flex-col text-slate-600 dark:text-slate-400 text-xs sm:text-sm">
                 <a href="tel:+919811922446" className="hover:text-accent font-semibold transition-colors">+91 9811922446</a>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Contact() {
                 <FaEnvelope size={16} />
               </div>
               <h3 className="font-bold text-slate-900 dark:text-white font-display text-sm">Email Support</h3>
-              <a href="mailto:info.supremesystemssolution@gmail.com" className="text-slate-650 hover:text-accent dark:text-slate-400 text-xs sm:text-sm block truncate font-semibold">
+              <a href="mailto:info.supremesystemssolution@gmail.com" className="text-slate-600 hover:text-accent dark:text-slate-400 text-xs sm:text-sm block truncate font-semibold">
                 info.supremesystemssolution@gmail.com
               </a>
             </div>
@@ -163,7 +163,7 @@ export default function Contact() {
                 <FaMapMarkerAlt size={16} />
               </div>
               <h3 className="font-bold text-slate-900 dark:text-white font-display text-sm">Plant & Factory Location</h3>
-              <p className="text-slate-650 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
                 Khasra No. 7181 2220 Gali No.1, West Rajiv Nagar, Opp. Chugg Egg Store, Gurugram – 122001, Haryana, India
               </p>
             </div>
@@ -171,8 +171,8 @@ export default function Contact() {
             {/* Hours */}
             <div className="bg-white dark:bg-dark-card border border-slate-200 dark:border-slate-800 p-6 rounded-2xl shadow-sm space-y-3 sm:col-span-2">
               <div className="flex gap-4">
-                <span className="flex items-center gap-1.5 text-xs text-slate-450 font-semibold"><FaCalendarAlt /> Monday - Saturday</span>
-                <span className="flex items-center gap-1.5 text-xs text-slate-455 font-semibold"><FaClock /> 9:00 AM - 6:00 PM</span>
+                <span className="flex items-center gap-1.5 text-xs text-slate-500 font-semibold"><FaCalendarAlt /> Monday - Saturday</span>
+                <span className="flex items-center gap-1.5 text-xs text-slate-500 font-semibold"><FaClock /> 9:00 AM - 6:00 PM</span>
               </div>
             </div>
 
@@ -208,7 +208,7 @@ export default function Contact() {
                 <FaCheckCircle size={36} />
               </div>
               <h4 className="text-xl font-bold text-slate-900 dark:text-white font-display">Inquiry Sent Successfully!</h4>
-              <p className="text-slate-500 dark:text-slate-405 text-xs sm:text-sm max-w-sm mx-auto">
+              <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-sm mx-auto">
                 Thank you for contacting Supreme Systems Solution. Our sales and engineering desk will review your message and reach back to you within 24 hours.
               </p>
             </motion.div>

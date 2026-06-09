@@ -55,7 +55,7 @@ function ProductsCatalogContent() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
           <h1 className="text-3xl sm:text-5xl font-extrabold font-display">Our Magnetic Components</h1>
-          <p className="text-slate-405 text-xs sm:text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-400 text-xs sm:text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
             Industrial-grade magnetic solutions and power conversion components. Engineered for high-frequency operations, thermal efficiency, and complete EMI suppression. We manufacture Switching Transformers, Power Inductors, Current Transformers, and Common Mode Chokes custom-tailored to global compliance standards.
           </p>
         </div>
@@ -76,7 +76,7 @@ function ProductsCatalogContent() {
                 className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg uppercase tracking-wider transition-colors cursor-pointer ${
                   selectedCategory === cat
                     ? 'bg-primary text-white dark:bg-primary-light'
-                    : 'text-slate-650 hover:bg-slate-55 bg-slate-100 dark:text-slate-350 dark:bg-slate-800 dark:hover:bg-slate-700/50'
+                    : 'text-slate-600 hover:bg-slate-200 bg-slate-100 dark:text-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700/50'
                 }`}
               >
                 {cat}
@@ -141,14 +141,14 @@ function ProductsCatalogContent() {
                       {product.name}
                     </h3>
 
-                    <p className="text-slate-650 dark:text-slate-400 text-xs sm:text-sm line-clamp-3 leading-relaxed">
+                    <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm line-clamp-3 leading-relaxed">
                       {product.description}
                     </p>
                     <div className="pt-2">
                       <ul className="grid grid-cols-2 gap-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400">
                         {product.specifications.slice(0, 4).map((spec) => (
                           <li key={spec.label} className="bg-slate-50 dark:bg-slate-900/60 px-2.5 py-1.5 rounded border border-slate-100 dark:border-slate-800">
-                            <span className="block text-slate-405 text-[9px] uppercase font-bold">{spec.label}</span>
+                            <span className="block text-slate-400 text-[9px] uppercase font-bold">{spec.label}</span>
                             <span className="text-slate-700 dark:text-slate-200 truncate block">{spec.value}</span>
                           </li>
                         ))}
@@ -165,7 +165,7 @@ function ProductsCatalogContent() {
               ))
             ) : (
               <div className="col-span-full py-16 text-center bg-white dark:bg-dark-card rounded-2xl border border-slate-200 dark:border-slate-800">
-                <p className="text-slate-550 text-sm">No components match your search. Contact us for custom configurations.</p>
+                <p className="text-slate-500 text-sm">No components match your search. Contact us for custom configurations.</p>
                 <Link href="/contact" className="inline-block mt-4">
                   <Button variant="outline">Request Custom Design</Button>
                 </Link>
