@@ -148,7 +148,7 @@ export default function Home() {
               A Global Standard In <br />
               High-Frequency Magnetic Design
             </h2>
-            <p className="text-slate-650 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
               Based in Gurugram, India, Supreme Systems Solution specializes in designing and manufacturing high-quality magnetic components. We deliver reliable, efficient, and cost-effective electromagnetic solutions tailored for complex modern electronic systems.
             </p>
             <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -215,7 +215,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-dark-card border border-slate-200/60 dark:border-slate-850 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col justify-between"
+                className="bg-white dark:bg-dark-card border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col justify-between"
               >
                 <div className="p-6 space-y-4">
                   {/* Product Image */}

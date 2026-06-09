@@ -62,7 +62,7 @@ export default function Services() {
                 <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">
                   {service.title}
                 </h3>
-                <p className="text-slate-650 dark:text-slate-350 text-sm sm:text-base leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                   {service.fullDesc}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">

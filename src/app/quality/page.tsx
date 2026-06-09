@@ -41,7 +41,7 @@ export default function QualityAssurance() {
           <h2 className="text-2xl sm:text-3xl font-bold font-display text-slate-900 dark:text-white leading-tight">
             Quality Management
           </h2>
-          <p className="text-slate-650 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
             Our primary goal is customer satisfaction. Each member of the Supreme Systems team is responsible for ensuring that all customer requirements, expectations and needs are met. Every employee is involved and committed to pursue the principles of excellence. We achieve this by improving processes, methods and work environment to ensure each customer is receiving the highest quality product, the best possible delivery and competitive pricing.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-slate-100 dark:border-slate-800">

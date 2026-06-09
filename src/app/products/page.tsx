@@ -126,7 +126,7 @@ function ProductsCatalogContent() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-white dark:bg-dark-card border border-slate-200/60 dark:border-slate-850 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                  className="bg-white dark:bg-dark-card border border-slate-200/60 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div className="p-6 space-y-4">
                     {/* Product Image */}

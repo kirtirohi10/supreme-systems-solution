@@ -41,7 +41,7 @@ export default async function ProductDetails({ params }: PageProps) {
               <h1 className="text-3xl sm:text-4xl font-extrabold font-display text-white">
                 {product.name}
               </h1>
-              <p className="text-slate-404 text-sm sm:text-base mt-2 max-w-xl">
+              <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-xl">
                 {product.tagline}
               </p>
             </div>
@@ -70,7 +70,7 @@ export default async function ProductDetails({ params }: PageProps) {
               <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white flex items-center gap-2">
                 <FaIndustry className="text-primary dark:text-primary-light" size={18} /> Description
               </h3>
-              <p className="text-slate-600 dark:text-slate-350 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 {product.description}
               </p>
             </div>
@@ -94,7 +94,7 @@ export default async function ProductDetails({ params }: PageProps) {
                     <th className="px-4 py-3">Values / Range</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-350">
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
                   {product.specifications.map((spec) => (
                     <tr key={spec.label} className="hover:bg-slate-50/50 dark:hover:bg-slate-800/10">
                       <td className="px-4 py-3 font-semibold text-slate-950 dark:text-white">{spec.label}</td>
@@ -118,7 +118,7 @@ export default async function ProductDetails({ params }: PageProps) {
                     <span className="w-5 h-5 rounded-full bg-green-500/10 text-green-500 flex items-center justify-center shrink-0 mt-0.5">
                       <FaCheck size={10} />
                     </span>
-                    <span className="text-slate-650 dark:text-slate-400 leading-tight">{feat}</span>
+                    <span className="text-slate-600 dark:text-slate-400 leading-tight">{feat}</span>
                   </li>
                 ))}
               </ul>
@@ -133,7 +133,7 @@ export default async function ProductDetails({ params }: PageProps) {
                     <span className="w-5 h-5 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light flex items-center justify-center shrink-0 mt-0.5">
                       <FaCheck size={10} />
                     </span>
-                    <span className="text-slate-650 dark:text-slate-400 leading-tight">{app}</span>
+                    <span className="text-slate-600 dark:text-slate-400 leading-tight">{app}</span>
                   </li>
                 ))}
               </ul>
@@ -151,7 +151,7 @@ export default async function ProductDetails({ params }: PageProps) {
                 {product.industries.map((ind) => (
                   <span 
                     key={ind} 
-                    className="inline-flex items-center px-3 py-1.5 bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-350 rounded-lg text-xs font-semibold"
+                    className="inline-flex items-center px-3 py-1.5 bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-semibold"
                   >
                     {ind}
                   </span>
@@ -168,7 +168,7 @@ export default async function ProductDetails({ params }: PageProps) {
                     <span className="w-5 h-5 rounded-full bg-accent/10 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <FaCheck size={10} />
                     </span>
-                    <span className="text-slate-650 dark:text-slate-400 leading-tight">{benefit}</span>
+                    <span className="text-slate-600 dark:text-slate-400 leading-tight">{benefit}</span>
                   </li>
                 ))}
               </ul>

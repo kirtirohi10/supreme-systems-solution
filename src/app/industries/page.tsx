@@ -84,7 +84,7 @@ export default function Industries() {
                   <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white">{ind.name}</h3>
                   <p className="text-xs text-accent font-semibold uppercase tracking-wider mt-0.5">{ind.tagline}</p>
                 </div>
-                <p className="text-slate-650 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
                   {ind.desc}
                 </p>
               </div>
@@ -93,7 +93,7 @@ export default function Industries() {
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Key Engineering Solutions:</p>
                 <div className="flex flex-wrap gap-2">
                   {ind.benefits.map((ben) => (
-                    <span key={ben} className="bg-slate-50 dark:bg-slate-900 text-slate-650 dark:text-slate-350 text-[11px] font-semibold px-2.5 py-1 rounded border border-slate-100 dark:border-slate-800">
+                    <span key={ben} className="bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-[11px] font-semibold px-2.5 py-1 rounded border border-slate-100 dark:border-slate-800">
                       {ben}
                     </span>
                   ))}

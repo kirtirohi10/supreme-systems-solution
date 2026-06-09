@@ -176,7 +176,7 @@ export const Navbar: React.FC = () => {
           {/* Mobile hamburger menu */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-1.5 text-slate-650 hover:text-primary dark:text-slate-300 dark:hover:text-slate-100 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+            className="p-1.5 text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-slate-100 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             aria-label="Toggle Menu"
           >
             {isOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
@@ -191,7 +191,7 @@ export const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-t border-slate-200/80 dark:border-slate-850 bg-white dark:bg-dark-bg"
+            className="lg:hidden border-t border-slate-200/80 dark:border-slate-800 bg-white dark:bg-dark-bg"
           >
             <div className="px-4 pt-2 pb-6 space-y-1">
               {navLinks.map((link) => {

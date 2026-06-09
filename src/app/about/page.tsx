@@ -118,34 +118,34 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-dark-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm">
               <h3 className="text-lg font-bold font-display text-primary dark:text-primary-light">Goal & Reputation</h3>
-              <p className="text-slate-655 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                 Supreme Systems goal is to become most preferred source of high quality magnetic components. By ensuring consistent quality in production, dependable response in delivery, and fair competitive prices, we intend to match our reputation for product excellence with an equal commitment to customer satisfaction.
               </p>
             </div>
             
             <div className="bg-white dark:bg-dark-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm">
               <h3 className="text-lg font-bold font-display text-accent">Customer Focus</h3>
-              <p className="text-slate-655 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                 The future of our success, growth and prosperity is and always will be our customers. Their need will receive continuous attention from our entire team of employees at every level.
               </p>
             </div>
 
             <div className="bg-white dark:bg-dark-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm">
               <h3 className="text-lg font-bold font-display text-accent">Exceeding Expectations</h3>
-              <p className="text-slate-655 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                 We are committed to meeting or exceeding customers’ expectations with every order. Our dedication to superior results is built on a foundation of teamwork.
               </p>
             </div>
 
             <div className="bg-white dark:bg-dark-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 shadow-sm">
               <h3 className="text-lg font-bold font-display text-primary dark:text-primary-light">Quality Philosophy</h3>
-              <p className="text-slate-655 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                 Management’s philosophy insists quality be designed into every product and service we offer. Supreme Systems is dedicated to a proactive approach to continuous improvement.
               </p>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
