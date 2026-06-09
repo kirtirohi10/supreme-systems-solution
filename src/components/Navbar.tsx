@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import { FaSun, FaMoon, FaBars, FaTimes, FaSearch } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { PillNav } from './PillNav';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -116,31 +117,17 @@ export const Navbar: React.FC = () => {
 
         {/* Bottom Navigation Row */}
         <div className="flex justify-center pb-4 pt-1">
-          <nav className="flex items-center space-x-6 text-sm font-semibold">
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href;
-              return (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className={`px-3 py-1.5 rounded-md transition-colors relative ${
-                    isActive 
-                      ? 'text-primary dark:text-primary-light' 
-                      : 'text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-slate-100'
-                  }`}
-                >
-                  <span>{link.name}</span>
-                  {isActive && (
-                    <motion.div
-                      layoutId="activeNavIndicatorDesktop"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-accent"
-                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                </Link>
-              );
-            })}
-          </nav>
+          {mounted && (
+            <PillNav
+              items={navLinks.map(link => ({ label: link.name, href: link.href }))}
+              activeHref={pathname}
+              baseColor={theme === 'dark' ? '#141B2D' : '#0A3D91'}
+              pillColor={theme === 'dark' ? '#1e293b' : '#f8fafc'}
+              pillTextColor={theme === 'dark' ? '#f1f5f9' : '#0A3D91'}
+              hoveredPillTextColor="#ffffff"
+              initialLoadAnimation={false}
+            />
+          )}
         </div>
       </div>
 
